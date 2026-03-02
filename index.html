@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Água Milagrosa – Poços Artesianos | Com Garantia e o Melhor Preço do Mercado</title>
+  <meta name="description" content="Poços Artesianos com garantia e o melhor preço do mercado. Perfuração, manutenção e regularização. Atendemos Adolfo/SP e região. (17) 98107-9757" />
+  <link rel="icon" href="images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --azul: #0396FF;
+      --azul-escuro: #0352A0;
+      --azul-footer: #0396FF;
+      --azul-footer2: #0352A0;
+      --branco: #ffffff;
+      --cinza: #f5f8fa;
+      --texto: #333;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Open Sans', sans-serif; color: var(--texto); }
+
+    /* ========== HEADER ========== */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      background: #fff;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    }
+
+    .header-top {
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 40px;
+      border-bottom: 4px solid var(--azul);
+    }
+
+    .header-logo img { height: 70px; }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 4px;
+      align-items: center;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #222;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      padding: 6px 10px;
+      border-radius: 4px;
+      transition: color .2s;
+    }
+
+    nav ul li a:hover { color: var(--azul); }
+
+    nav ul li.orcamento-link a {
+      background: var(--azul);
+      color: #fff;
+      border-radius: 4px;
+      padding: 6px 10px;
+      font-size: 12px;
+    }
+
+    .header-icons {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .header-icons a img { height: 36px; transition: transform .2s; }
+    .header-icons a img:hover { transform: scale(1.1); }
+
+    /* Mobile menu */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 26px;
+      height: 3px;
+      background: var(--azul-escuro);
+      border-radius: 2px;
+      transition: all .3s;
+    }
+    .nav-mobile {
+      display: none;
+      background: #fff;
+      padding: 16px 24px;
+      border-top: 1px solid #eee;
+    }
+    .nav-mobile.open { display: block; }
+    .nav-mobile ul { list-style: none; }
+    .nav-mobile ul li { border-bottom: 1px solid #f0f0f0; }
+    .nav-mobile ul li a {
+      display: block;
+      padding: 12px 0;
+      text-decoration: none;
+      color: #222;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    /* ========== HERO ========== */
+    #home {
+      margin-top: 90px;
+      position: relative;
+      min-height: 520px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('images/banner-principal.png');
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.55);
+    }
+
+    .hero-content {
+      position: relative;
+      text-align: center;
+      color: #fff;
+      padding: 60px 20px;
+    }
+
+    .hero-content h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 0 2px 16px rgba(0,0,0,0.5);
+      margin-bottom: 12px;
+    }
+
+    .hero-content h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(0.85rem, 2vw, 1.1rem);
+      font-weight: 600;
+      background: #fff;
+      color: var(--azul);
+      display: inline-block;
+      padding: 4px 18px;
+      border-radius: 2px;
+      margin-bottom: 36px;
+      letter-spacing: 1px;
+    }
+
+    .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #25d366;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 16px 36px;
+      border-radius: 6px;
+      text-decoration: none;
+      border: 3px solid rgba(255,255,255,0.4);
+      transition: background .2s, transform .2s;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    .btn-whatsapp:hover { background: #1ebe5d; transform: scale(1.04); }
+    .btn-whatsapp svg { width: 26px; height: 26px; fill: #fff; flex-shrink: 0; }
+
+    /* Wave separador */
+    .wave-sep {
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      margin-top: -2px;
+    }
+    .wave-sep svg { display: block; width: 100%; }
+
+    /* ========== SEÇÃO GENÉRICA ========== */
+    section { padding: 70px 20px; }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 900;
+      color: var(--azul);
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-transform: uppercase;
+    }
+
+    .section-title h2 img {
+      height: 40px;
+    }
+
+    /* ========== SERVIÇOS ========== */
+    #servicos { background: url('images/banner-servicos.png') center/cover fixed; }
+
+    .servicos-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .servico-card {
+      background: rgba(255,255,255,0.88);
+      border-radius: 6px;
+      padding: 28px 24px 24px;
+      text-align: center;
+      backdrop-filter: blur(4px);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .servico-card:hover { transform: translateY(-6px); box-shadow: 0 12px 32px rgba(3,82,160,0.15); }
+
+    .servico-card img.icone {
+      height: 80px;
+      margin-bottom: 16px;
+    }
+
+    .servico-card h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 900;
+      color: var(--azul);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .servico-card p {
+      font-size: 0.88rem;
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    .btn-saiba {
+      display: inline-block;
+      background: var(--azul);
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 8px 22px;
+      border-radius: 3px;
+      text-decoration: none;
+      transition: background .2s;
+    }
+    .btn-saiba:hover { background: var(--azul-escuro); }
+
+    .btn-orcamento-center {
+      text-align: center;
+      margin-top: 36px;
+    }
+
+    .btn-orcamento {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--azul);
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 14px 32px;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background .2s, transform .2s;
+    }
+    .btn-orcamento:hover { background: var(--azul-escuro); transform: scale(1.03); }
+
+    /* ========== ORÇAMENTO ========== */
+    #orcamento {
+      background: url('images/banner-servicos.png') center/cover;
+      position: relative;
+    }
+    #orcamento::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(10, 30, 80, 0.65);
+    }
+
+    .orcamento-box {
+      position: relative;
+      max-width: 560px;
+      margin: 0 auto;
+      background: rgba(80, 60, 200, 0.82);
+      border-radius: 10px;
+      padding: 40px 36px;
+      text-align: center;
+      backdrop-filter: blur(6px);
+    }
+
+    .orcamento-titulo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+
+    .orcamento-titulo img { height: 38px; }
+
+    .orcamento-titulo h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: 2rem;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-bottom: 3px double rgba(255,255,255,0.5);
+      padding-bottom: 6px;
+    }
+
+    .orcamento-box input,
+    .orcamento-box textarea {
+      width: 100%;
+      padding: 12px 14px;
+      margin-bottom: 12px;
+      border: none;
+      border-radius: 3px;
+      font-size: 0.95rem;
+      font-family: 'Open Sans', sans-serif;
+      background: #fff;
+      color: #333;
+    }
+
+    .orcamento-box textarea { height: 90px; resize: vertical; }
+
+    .btn-enviar {
+      background: #07BADE;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 14px 40px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      margin-top: 8px;
+      transition: background .2s, transform .2s;
+      width: 60%;
+    }
+    .btn-enviar:hover { background: #0392b0; transform: scale(1.04); }
+
+    .form-msg { color: #a0ffb0; font-size: 0.9rem; margin-top: 10px; display: none; }
+
+    /* ========== GALERIA ========== */
+    #galeria { background: #f0f6fb; }
+
+    .galeria-box {
+      max-width: 1060px;
+      margin: 0 auto;
+      background: #abc8d6;
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 14px 10px 16px 9px rgba(80,128,151,0.48);
+    }
+
+    .galeria-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .galeria-grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 4px;
+      transition: transform .25s, filter .25s;
+      cursor: pointer;
+    }
+    .galeria-grid img:hover { transform: scale(1.04); filter: brightness(1.08); }
+
+    /* ========== BLOG ========== */
+    #blog { background: #fff; }
+
+    .blog-grid {
+      max-width: 960px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+    }
+
+    .blog-card {
+      background: #edfafb;
+      border-radius: 4px;
+      overflow: hidden;
+      transition: box-shadow .2s;
+    }
+    .blog-card:hover { box-shadow: 0 6px 24px rgba(3,150,255,0.13); }
+
+    .blog-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .blog-card-body { padding: 20px; }
+
+    .blog-card-body h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    .blog-card-body p {
+      font-size: 0.85rem;
+      line-height: 1.65;
+      color: #555;
+    }
+
+    .btn-plus {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px; height: 44px;
+      background: var(--azul);
+      color: #fff;
+      border-radius: 50%;
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-decoration: none;
+      margin-top: 14px;
+      box-shadow: 0 0 10px 4px rgba(87,209,255,0.4);
+      transition: background .2s;
+    }
+    .btn-plus:hover { background: var(--azul-escuro); }
+
+    /* ========== RODAPÉ ========== */
+    footer {
+      background: var(--azul-footer);
+      color: #fff;
+      padding: 50px 40px 0;
+    }
+
+    .footer-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1px 1fr 1px 1fr;
+      gap: 0;
+      padding-bottom: 30px;
+    }
+
+    .footer-divider {
+      background: rgba(255,255,255,0.3);
+      margin: 0 20px;
+    }
+
+    .footer-col { padding: 0 24px; }
+
+    .footer-col img.footer-logo { height: 55px; margin-bottom: 12px; }
+
+    .footer-col h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: 1rem;
+      margin-bottom: 6px;
+      border-bottom: 1px solid rgba(255,255,255,0.35);
+      padding-bottom: 8px;
+    }
+
+    .footer-col p, .footer-col a {
+      font-size: 0.88rem;
+      line-height: 1.8;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .footer-col a:hover { text-decoration: underline; }
+
+    .footer-nav ul { list-style: none; }
+    .footer-nav ul li a {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: #fff;
+      text-decoration: none;
+      line-height: 2;
+    }
+    .footer-nav ul li a:hover { text-decoration: underline; }
+
+    .footer-cta { display: flex; flex-direction: column; gap: 16px; align-items: flex-start; }
+
+    .footer-cta a.btn-footer {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: 3px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-decoration: none;
+      transition: opacity .2s;
+    }
+    .footer-cta a.btn-footer:hover { opacity: .85; }
+    .footer-cta a.btn-footer img { height: 28px; }
+
+    .footer-bottom {
+      background: var(--azul-footer2);
+      text-align: center;
+      padding: 14px;
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.9);
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .footer-bottom a { color: #fff; font-weight: 700; text-decoration: none; }
+
+    /* ========== BTN WHATSAPP FLUTUANTE ========== */
+    .wpp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 9999;
+      background: #25d366;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+      animation: pulse 2s infinite;
+    }
+    .wpp-float svg { width: 34px; height: 34px; fill: #fff; }
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); }
+      50% { box-shadow: 0 4px 30px rgba(37,211,102,0.8); }
+    }
+
+    /* ========== RESPONSIVO ========== */
+    @media (max-width: 900px) {
+      .header-top { padding: 8px 20px; }
+      nav, .header-icons { display: none; }
+      .hamburger { display: flex; }
+
+      .servicos-grid { grid-template-columns: 1fr; max-width: 420px; }
+      .blog-grid { grid-template-columns: 1fr; }
+      .galeria-grid { grid-template-columns: repeat(2, 1fr); }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .footer-divider { display: none; }
+      footer { padding: 36px 20px 0; }
+    }
+
+    @media (max-width: 480px) {
+      .galeria-grid { grid-template-columns: 1fr; }
+      .orcamento-box { padding: 28px 18px; }
+      .btn-enviar { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-top">
+    <div class="header-logo">
+      <a href="#home"><img src="images/logo.png" alt="Água Milagrosa Poços Artesianos" /></a>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li class="orcamento-link"><a href="#orcamento">FAÇA SEU ORÇAMENTO ✦</a></li>
+        <li><a href="#galeria">Galeria de Fotos</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-icons">
+      <a href="tel:5517981079757" title="Ligar"><img src="images/icon-ligar.png" alt="Telefone" /></a>
+      <a href="https://api.whatsapp.com/send?phone=5517981079757&text=%5BSite%5D%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20Po%C3%A7o%20Artesiano." target="_blank" title="WhatsApp"><img src="images/icon-zap.png" alt="WhatsApp" /></a>
+      <a href="https://maps.app.goo.gl/RLTCVBAxEPG5Dbwn9" target="_blank" title="Localização"><img src="images/icon-localizacao.png" alt="Localização" /></a>
+    </div>
+
+    <!-- Hamburger mobile -->
+    <div class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <!-- Menu mobile -->
+  <nav class="nav-mobile" id="navMobile">
+    <ul>
+      <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+      <li><a href="#servicos" onclick="toggleMenu()">Serviços</a></li>
+      <li><a href="#orcamento" onclick="toggleMenu()">Faça seu Orçamento</a></li>
+      <li><a href="#galeria" onclick="toggleMenu()">Galeria de Fotos</a></li>
+      <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
+      <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <h1>Poços Artesianos</h1>
+    <h2>Com Garantia e o Melhor Preço do Mercado</h2>
+    <a class="btn-whatsapp" href="https://api.whatsapp.com/send?phone=5517981079757&text=%5BSite%5D%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20Po%C3%A7o%20Artesiano." target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      PEÇA JÁ SEU ORÇAMENTO
+    </a>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos">
+  <div class="section-title">
+    <h2>
+      <img src="images/icon-perfuracao.png" alt="" />
+      SERVIÇOS
+    </h2>
+  </div>
+
+  <div class="servicos-grid">
+    <div class="servico-card">
+      <img class="icone" src="images/icon-perfuracao.png" alt="Perfuração" />
+      <h3>&#9660; PERFURAÇÃO</h3>
+      <p>Profissionais capacitados para garantir um projeto bem-estruturado e um poço de alta performance.</p>
+      <a class="btn-saiba" href="#orcamento">Saiba Mais</a>
+    </div>
+    <div class="servico-card">
+      <img class="icone" src="images/icon-manutencao.png" alt="Manutenção" />
+      <h3>&#9660; MANUTENÇÃO</h3>
+      <p>Realizamos a manutenção de poços artesianos de maneira preventiva ou corretiva.</p>
+      <a class="btn-saiba" href="#orcamento">Saiba Mais</a>
+    </div>
+    <div class="servico-card">
+      <img class="icone" src="images/icon-regularizacao.png" alt="Regularização" />
+      <h3>&#9660; REGULARIZAÇÃO</h3>
+      <p>Nossa equipe cuida de toda a documentação de sua obra para que seu poço artesiano seja legalmente autorizado.</p>
+      <a class="btn-saiba" href="#orcamento">Saiba Mais</a>
+    </div>
+  </div>
+
+  <div class="btn-orcamento-center">
+    <a class="btn-orcamento" href="#orcamento">PEÇA SEU ORÇAMENTO</a>
+  </div>
+</section>
+
+<!-- ORÇAMENTO -->
+<section id="orcamento">
+  <div class="orcamento-box">
+    <div class="orcamento-titulo">
+      <img src="images/icon-perfuracao.png" alt="" />
+      <h2>ORÇAMENTO</h2>
+    </div>
+    <form id="formOrcamento" onsubmit="enviarFormulario(event)">
+      <input type="text" id="nome" name="nome" placeholder="Nome" required />
+      <input type="email" id="email" name="email" placeholder="Seu Melhor E-mail" required />
+      <input type="tel" id="whatsapp" name="whatsapp" placeholder="WhatsApp" required />
+      <textarea id="mensagem" name="mensagem" placeholder="Deixe Sua Mensagem"></textarea>
+      <br/>
+      <button type="submit" class="btn-enviar">ENVIAR AGORA</button>
+      <p class="form-msg" id="formMsg">✅ Mensagem enviada com sucesso!</p>
+    </form>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section id="galeria">
+  <div class="section-title">
+    <h2>
+      <img src="images/icon-perfuracao.png" alt="" />
+      GALERIA DE FOTOS
+    </h2>
+  </div>
+
+  <div class="galeria-box">
+    <div class="galeria-grid">
+      <img src="images/galeria-01.png" alt="Poço Artesiano 1" />
+      <img src="images/galeria-02.png" alt="Poço Artesiano 2" />
+      <img src="images/blog-perfuracao.png" alt="Perfuração de Poço" />
+      <img src="images/blog-manutencao.png" alt="Manutenção de Poço" />
+      <img src="images/blog-regularizacao.png" alt="Regularização de Poço" />
+      <img src="images/galeria-01.png" alt="Poço Artesiano" />
+    </div>
+  </div>
+
+  <div class="btn-orcamento-center" style="margin-top:36px;">
+    <a class="btn-whatsapp" href="https://api.whatsapp.com/send?phone=5517981079757&text=%5BSite%5D%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20Po%C3%A7o%20Artesiano." target="_blank" style="background:#111;border-color:#fff;">
+      <svg viewBox="0 0 24 24" style="fill:#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      PEÇA JÁ SEU ORÇAMENTO
+    </a>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog">
+  <div class="section-title">
+    <h2>
+      <img src="images/icon-perfuracao.png" alt="" />
+      FIQUE POR DENTRO
+    </h2>
+  </div>
+
+  <div class="blog-grid">
+    <div class="blog-card">
+      <img src="images/blog-perfuracao.png" alt="Poço Artesiano e Semi Artesiano" />
+      <div class="blog-card-body">
+        <h3>Qual a diferença entre poço artesiano e poço semi artesiano?</h3>
+        <p>Quando um poço é perfurado no solo com objetivo de captar água para diferentes usos, ele é chamado de poço tubular profundo. Para a construção efetiva, é preciso seguir algumas normas e ser regularizado. Para isso, é fundamental contar com uma empresa como a <strong>Água Milagrosa</strong>, que oferece serviços para o projeto completo da estrutura.</p>
+        <a class="btn-plus" href="#orcamento" title="Saiba mais">+</a>
+      </div>
+    </div>
+    <div class="blog-card">
+      <img src="images/blog-manutencao.png" alt="Manutenção de Poços Artesianos" />
+      <div class="blog-card-body">
+        <h3>Por que fazer a manutenção dos poços artesianos?</h3>
+        <p>A manutenção de poço artesiano é um processo fundamental para garantir a conservação da estrutura, para preservar a qualidade da água captada e o funcionamento pleno de todos os equipamentos.</p>
+        <a class="btn-plus" href="#orcamento" title="Saiba mais">+</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RODAPÉ -->
+<footer id="contato">
+  <div class="footer-grid">
+    <!-- Col 1: Logo + dados -->
+    <div class="footer-col">
+      <img class="footer-logo" src="images/logo.png" alt="Água Milagrosa" />
+      <br/>
+      <a href="images/icon-zap.png" style="display:block; margin: 10px 0">
+        <img src="images/icon-zap.png" alt="WhatsApp" style="height:38px"/>
+      </a>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <!-- Col 2: Contato -->
+    <div class="footer-col">
+      <h4>ÁGUA MILAGROSA<br/><span style="font-weight:400;font-size:.85rem">POÇOS ARTESIANOS</span></h4>
+      <p>
+        <a href="tel:5517981079757">17 98107-9757</a><br/>
+        <a href="https://maps.app.goo.gl/RLTCVBAxEPG5Dbwn9" target="_blank">
+          Rua José Luís Gandini, 1834<br/>
+          Distrito Industrial João Theodoro de Deus<br/>
+          Adolfo/SP — CEP: 15230-000
+        </a><br/>
+        <a href="mailto:contato@aguamilagrosapocos.com.br">contato@aguamilagrosapocos.com.br</a>
+      </p>
+      <div style="margin-top:16px;display:flex;gap:10px">
+        <a href="images/icon-zap.png" style="display:block"><img src="images/icon-zap.png" alt="WhatsApp" style="height:34px"/></a>
+        <a href="https://maps.app.goo.gl/RLTCVBAxEPG5Dbwn9" target="_blank"><img src="images/icon-localizacao.png" alt="Maps" style="height:34px"/></a>
+      </div>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <!-- Col 3: Nav -->
+    <div class="footer-col footer-nav">
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#servicos">Serviços ▾</a></li>
+          <li><a href="#orcamento">Faça Seu Orçamento ✦</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 | Todos os direitos reservados — Água Milagrosa | Desenvolvido por
+    <a href="https://mundodigitalsolucoes.com.br" target="_blank">Mundo Digital Soluções</a>
+  </div>
+</footer>
+
+<!-- WhatsApp flutuante -->
+<a class="wpp-float" href="https://api.whatsapp.com/send?phone=5517981079757&text=%5BSite%5D%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20Po%C3%A7o%20Artesiano." target="_blank" title="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('navMobile');
+    nav.classList.toggle('open');
+  }
+
+  // Formspree — substitua YOUR_FORM_ID pelo ID do seu form em formspree.io
+  async function enviarFormulario(e) {
+    e.preventDefault();
+    const btn = document.querySelector('.btn-enviar');
+    btn.textContent = 'Enviando...';
+    btn.disabled = true;
+
+    const dados = {
+      nome: document.getElementById('nome').value,
+      email: document.getElementById('email').value,
+      whatsapp: document.getElementById('whatsapp').value,
+      mensagem: document.getElementById('mensagem').value,
+    };
+
+    // Redireciona para WhatsApp com os dados do formulário
+    const msg = encodeURIComponent(
+      `[Site] Olá! Me chamo ${dados.nome}.\nWhatsApp: ${dados.whatsapp}\nEmail: ${dados.email}\nMensagem: ${dados.mensagem}`
+    );
+    window.open(`https://api.whatsapp.com/send?phone=5517981079757&text=${msg}`, '_blank');
+
+    document.getElementById('formMsg').style.display = 'block';
+    document.getElementById('formOrcamento').reset();
+    btn.textContent = 'ENVIAR AGORA';
+    btn.disabled = false;
+  }
+</script>
+
+</body>
+</html>
