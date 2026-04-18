@@ -4,1064 +4,407 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Água Milagrosa Poços Artesianos | Perfuração, Manutenção e Regularização em Adolfo/SP</title>
-  <meta name="description" content="Perfuração, manutenção e regularização de poços artesianos com atendimento ágil em Adolfo/SP e região. Peça seu orçamento no WhatsApp." />
-  <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#0A6FD6" />
+  <meta name="description" content="Perfuração, manutenção e regularização de poços artesianos em Adolfo/SP e região. Peça seu orçamento rápido pelo WhatsApp." />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0b75df" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Água Milagrosa Poços Artesianos" />
-  <meta property="og:description" content="Soluções completas em poços artesianos com atendimento rápido, equipe especializada e orçamento no WhatsApp." />
+  <meta property="og:description" content="Atendimento rápido para perfuração, manutenção e regularização de poços artesianos." />
   <meta property="og:image" content="banner-principal.png" />
   <meta property="og:locale" content="pt_BR" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="icon" href="images/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --bg: #071b33;
-      --surface: rgba(255,255,255,0.82);
-      --surface-strong: #ffffff;
-      --text: #18324d;
-      --muted: #56728f;
-      --line: rgba(10, 111, 214, 0.16);
-      --primary: #0A6FD6;
-      --primary-dark: #064C97;
-      --primary-soft: #EAF5FF;
-      --accent: #25D366;
-      --accent-dark: #13b354;
-      --shadow: 0 20px 60px rgba(7, 27, 51, 0.16);
-      --radius-xl: 28px;
-      --radius-lg: 20px;
-      --radius-md: 14px;
-      --radius-sm: 10px;
-      --container: 1180px;
+    :root{
+      --bg:#eef6ff;
+      --surface:#ffffff;
+      --surface-soft:rgba(255,255,255,.82);
+      --text:#16304a;
+      --muted:#5f7892;
+      --line:rgba(12,117,223,.12);
+      --primary:#0b75df;
+      --primary-dark:#0754a8;
+      --primary-soft:#eaf4ff;
+      --accent:#22c55e;
+      --accent-dark:#16a34a;
+      --shadow:0 20px 50px rgba(16,42,67,.12);
+      --radius-xl:32px;
+      --radius-lg:24px;
+      --radius-md:18px;
+      --radius-sm:14px;
+      --container:1180px;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: 'Inter', sans-serif;
-      color: var(--text);
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:'Inter',sans-serif;
+      color:var(--text);
       background:
-        radial-gradient(circle at top left, rgba(27, 145, 255, 0.10), transparent 30%),
-        linear-gradient(180deg, #f7fbff 0%, #eef6fd 100%);
-      line-height: 1.6;
+        radial-gradient(circle at top left, rgba(11,117,223,.12), transparent 28%),
+        linear-gradient(180deg, #f7fbff 0%, #edf6ff 100%);
+      line-height:1.6;
     }
-
-    img { max-width: 100%; display: block; }
-    a { color: inherit; text-decoration: none; }
-    button, input, textarea { font: inherit; }
-
-    .container {
-      width: min(calc(100% - 32px), var(--container));
-      margin: 0 auto;
+    img{display:block;max-width:100%}
+    a{text-decoration:none;color:inherit}
+    button,input,select,textarea{font:inherit}
+    .container{width:min(calc(100% - 32px), var(--container));margin:0 auto}
+    .section{padding:88px 0}
+    .section-title{max-width:760px;margin:0 auto 42px;text-align:center}
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:10px;
+      padding:8px 14px;border-radius:999px;
+      background:var(--primary-soft);border:1px solid rgba(11,117,223,.12);
+      color:var(--primary);font-size:.78rem;font-weight:800;letter-spacing:.08em;
+      text-transform:uppercase;
     }
-
-    .section {
-      padding: 92px 0;
-      position: relative;
+    .section-title h2{
+      font-family:'Montserrat',sans-serif;
+      font-size:clamp(2rem,5vw,3.15rem);
+      line-height:1.05;letter-spacing:-.04em;
+      margin:16px 0 12px;font-weight:800;
     }
-
-    .section-title {
-      text-align: center;
-      max-width: 760px;
-      margin: 0 auto 42px;
+    .section-title p{color:var(--muted);font-size:1.02rem}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      border:0;border-radius:999px;padding:15px 24px;font-weight:800;
+      transition:transform .2s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
+      cursor:pointer
     }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 8px 14px;
-      border: 1px solid rgba(255,255,255,0.2);
-      border-radius: 999px;
-      font-size: 0.82rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      background: rgba(255,255,255,0.12);
-      backdrop-filter: blur(12px);
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{
+      background:linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+      color:#fff;box-shadow:0 18px 34px rgba(34,197,94,.28)
     }
-
-    .eyebrow.light {
-      color: var(--primary);
-      background: var(--primary-soft);
-      border-color: rgba(10,111,214,0.12);
+    .btn-secondary{
+      background:var(--surface);color:var(--primary);
+      border:1px solid rgba(11,117,223,.14);box-shadow:var(--shadow)
     }
-
-    .section-title h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: clamp(2rem, 5vw, 3.25rem);
-      line-height: 1.08;
-      margin-top: 18px;
-      margin-bottom: 12px;
-      font-weight: 800;
-      letter-spacing: -0.03em;
+    .btn-outline{
+      background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.18)
     }
+    .btn svg{width:20px;height:20px;flex-shrink:0}
 
-    .section-title p {
-      color: var(--muted);
-      font-size: 1.04rem;
+    .site-header{
+      position:sticky;top:0;z-index:1000;
+      background:rgba(247,251,255,.86);backdrop-filter:blur(16px);
+      border-bottom:1px solid rgba(11,117,223,.08)
     }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      border: 0;
-      border-radius: 999px;
-      padding: 16px 28px;
-      font-weight: 800;
-      letter-spacing: 0.01em;
-      transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease, color 0.22s ease;
-      cursor: pointer;
+    .site-header .container{
+      min-height:94px;display:flex;align-items:center;justify-content:space-between;gap:20px
     }
-
-    .btn:hover { transform: translateY(-2px); }
-
-    .btn-primary {
-      background: linear-gradient(135deg, var(--accent) 0%, #1bbc5b 100%);
-      color: #fff;
-      box-shadow: 0 18px 36px rgba(37, 211, 102, 0.28);
+    .brand{
+      display:flex;align-items:center;gap:16px;min-width:0
     }
-
-    .btn-primary:hover { background: linear-gradient(135deg, var(--accent-dark) 0%, #12a84d 100%); }
-
-    .btn-secondary {
-      background: rgba(255,255,255,0.12);
-      color: #fff;
-      border: 1px solid rgba(255,255,255,0.18);
-      backdrop-filter: blur(12px);
+    .brand img{height:58px;width:auto;object-fit:contain}
+    .brand-copy strong{
+      display:block;font-family:'Montserrat',sans-serif;font-size:1rem;line-height:1.05
     }
-
-    .btn-secondary.light {
-      background: var(--surface-strong);
-      color: var(--primary);
-      border: 1px solid rgba(10,111,214,0.14);
-      box-shadow: var(--shadow);
+    .brand-copy span{display:block;color:var(--muted);font-size:.9rem}
+    .desktop-nav{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+    .desktop-nav a{
+      padding:11px 14px;border-radius:999px;font-size:.95rem;font-weight:700;color:var(--text)
     }
-
-    .btn svg { width: 20px; height: 20px; flex-shrink: 0; }
-
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      padding: 14px 0;
-      background: rgba(247, 251, 255, 0.82);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid rgba(10,111,214,0.08);
+    .desktop-nav a:hover{background:rgba(11,117,223,.08);color:var(--primary)}
+    .header-actions{display:flex;align-items:center;gap:12px}
+    .phone-pill{
+      display:inline-flex;align-items:center;gap:10px;padding:11px 16px;border-radius:999px;
+      background:var(--surface);border:1px solid rgba(11,117,223,.12);box-shadow:var(--shadow);
+      white-space:nowrap;font-weight:800;font-size:.95rem
     }
-
-    .site-header .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
+    .menu-toggle{
+      display:none;width:48px;height:48px;border-radius:16px;border:1px solid rgba(11,117,223,.12);
+      background:var(--surface);box-shadow:var(--shadow);align-items:center;justify-content:center
     }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      min-width: 0;
+    .menu-toggle span,.menu-toggle span::before,.menu-toggle span::after{
+      content:"";display:block;width:20px;height:2px;border-radius:999px;background:var(--primary-dark);
+      position:relative;transition:.2s ease
     }
-
-    .brand img {
-      width: auto;
-      height: 64px;
+    .menu-toggle span::before{position:absolute;top:-6px}
+    .menu-toggle span::after{position:absolute;top:6px}
+    .mobile-nav{display:none;padding:0 0 16px}
+    .mobile-nav.show{display:block}
+    .mobile-nav-inner{
+      display:grid;gap:8px;padding:14px;border-radius:22px;background:rgba(255,255,255,.96);
+      box-shadow:var(--shadow);border:1px solid rgba(11,117,223,.08)
     }
+    .mobile-nav-inner a{padding:12px 14px;border-radius:12px;font-weight:700}
+    .mobile-nav-inner a:hover{background:rgba(11,117,223,.06)}
 
-    .brand-copy strong {
-      display: block;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.98rem;
-      letter-spacing: 0.03em;
+    .hero{padding:34px 0 22px}
+    .hero-grid{
+      display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:stretch
     }
-
-    .brand-copy span {
-      color: var(--muted);
-      font-size: 0.88rem;
-    }
-
-    .desktop-nav {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .desktop-nav a.nav-link {
-      padding: 10px 14px;
-      border-radius: 999px;
-      color: var(--text);
-      font-weight: 600;
-      font-size: 0.94rem;
-      transition: background 0.22s ease, color 0.22s ease;
-    }
-
-    .desktop-nav a.nav-link:hover {
-      background: rgba(10,111,214,0.08);
-      color: var(--primary);
-    }
-
-    .header-actions {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .phone-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 11px 16px;
-      border-radius: 999px;
-      background: var(--surface-strong);
-      border: 1px solid rgba(10,111,214,0.10);
-      font-weight: 700;
-      box-shadow: 0 10px 20px rgba(10,111,214,0.08);
-      white-space: nowrap;
-    }
-
-    .menu-toggle {
-      display: none;
-      width: 48px;
-      height: 48px;
-      border-radius: 14px;
-      background: var(--surface-strong);
-      border: 1px solid rgba(10,111,214,0.12);
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 10px 20px rgba(10,111,214,0.08);
-    }
-
-    .menu-toggle span,
-    .menu-toggle span::before,
-    .menu-toggle span::after {
-      content: "";
-      display: block;
-      width: 20px;
-      height: 2px;
-      border-radius: 999px;
-      background: var(--primary-dark);
-      position: relative;
-      transition: 0.2s ease;
-    }
-
-    .menu-toggle span::before { position: absolute; top: -6px; }
-    .menu-toggle span::after { position: absolute; top: 6px; }
-
-    .mobile-nav {
-      display: none;
-      padding-top: 14px;
-    }
-
-    .mobile-nav-inner {
-      display: grid;
-      gap: 8px;
-      padding: 16px;
-      border-radius: 24px;
-      background: rgba(255,255,255,0.92);
-      box-shadow: var(--shadow);
-      border: 1px solid rgba(10,111,214,0.08);
-    }
-
-    .mobile-nav a {
-      padding: 12px 14px;
-      border-radius: 12px;
-      font-weight: 700;
-      color: var(--text);
-    }
-
-    .mobile-nav a:hover { background: rgba(10,111,214,0.06); }
-
-    .hero {
-      padding: 48px 0 34px;
-      overflow: hidden;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 28px;
-      align-items: stretch;
-    }
-
-    .hero-panel {
-      position: relative;
-      overflow: hidden;
-      min-height: 660px;
-      border-radius: 32px;
+    .hero-panel{
+      min-height:640px;position:relative;overflow:hidden;border-radius:var(--radius-xl);
       background:
-        linear-gradient(135deg, rgba(7,27,51,0.88), rgba(10,111,214,0.62)),
+        linear-gradient(135deg, rgba(7,26,49,.88), rgba(11,117,223,.62)),
         url('banner-principal.png') center/cover;
-      box-shadow: var(--shadow);
-      color: #fff;
-      isolation: isolate;
+      color:#fff;box-shadow:var(--shadow)
     }
-
-    .hero-panel::before {
-      content: "";
-      position: absolute;
-      inset: 0;
+    .hero-panel::before{
+      content:"";position:absolute;inset:0;
       background:
-        radial-gradient(circle at top right, rgba(255,255,255,0.16), transparent 24%),
-        linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0));
-      z-index: -1;
+        radial-gradient(circle at top right, rgba(255,255,255,.16), transparent 22%),
+        linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,0));
+      pointer-events:none
     }
-
-    .hero-content {
-      padding: clamp(34px, 5vw, 56px);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      min-height: 100%;
-      max-width: 680px;
+    .hero-content{
+      position:relative;min-height:100%;padding:clamp(28px,5vw,52px);
+      display:flex;flex-direction:column;justify-content:center
     }
-
-    .hero-content h1 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: clamp(2.4rem, 6vw, 4.7rem);
-      line-height: 0.96;
-      letter-spacing: -0.05em;
-      font-weight: 900;
-      margin: 18px 0 18px;
+    .hero-content .eyebrow{
+      background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.18);color:#fff
     }
-
-    .hero-content p {
-      font-size: 1.08rem;
-      color: rgba(255,255,255,0.88);
-      max-width: 560px;
+    .hero-content h1{
+      font-family:'Montserrat',sans-serif;
+      font-size:clamp(2.35rem,6vw,4.9rem);
+      line-height:.98;letter-spacing:-.05em;font-weight:900;
+      margin:18px 0 16px;max-width:680px
     }
-
-    .hero-actions {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-      margin-top: 28px;
+    .hero-content p{
+      max-width:580px;color:rgba(255,255,255,.9);font-size:1.08rem
     }
-
-    .hero-highlights {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 14px;
-      margin-top: 28px;
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+    .hero-points{
+      display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:28px
     }
-
-    .hero-chip {
-      padding: 16px;
-      border-radius: 20px;
-      background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.14);
-      backdrop-filter: blur(14px);
-      min-height: 106px;
+    .hero-chip{
+      padding:16px;border-radius:20px;background:rgba(255,255,255,.12);
+      border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(14px)
     }
-
-    .hero-chip strong {
-      display: block;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1rem;
-      margin-bottom: 6px;
+    .hero-chip strong{
+      display:block;font-family:'Montserrat',sans-serif;font-size:1rem;margin-bottom:6px
     }
+    .hero-chip span{display:block;font-size:.92rem;color:rgba(255,255,255,.82)}
 
-    .hero-chip span {
-      font-size: 0.92rem;
-      color: rgba(255,255,255,0.82);
+    .quote-card{
+      background:rgba(255,255,255,.94);border-radius:var(--radius-xl);box-shadow:var(--shadow);
+      border:1px solid rgba(11,117,223,.1);overflow:hidden;display:flex;flex-direction:column
     }
-
-    .form-card {
-      align-self: stretch;
-      background: rgba(255,255,255,0.92);
-      border: 1px solid rgba(10,111,214,0.10);
-      backdrop-filter: blur(16px);
-      border-radius: 32px;
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
+    .quote-head{
+      padding:24px 24px 18px;
+      background:linear-gradient(135deg, rgba(11,117,223,.1), rgba(34,197,94,.06));
+      border-bottom:1px solid rgba(11,117,223,.08)
     }
+    .quote-head h2{
+      font-family:'Montserrat',sans-serif;font-size:1.6rem;line-height:1.08;margin:10px 0 8px
+    }
+    .quote-head p{color:var(--muted);font-size:.96rem}
+    .lead-form{display:grid;gap:14px;padding:22px 24px 26px}
+    .form-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .field{display:grid;gap:8px}
+    .field label{font-size:.88rem;color:var(--muted);font-weight:700}
+    .field input,.field select,.field textarea{
+      width:100%;padding:14px 16px;border-radius:16px;border:1px solid rgba(11,117,223,.14);
+      background:#fff;color:var(--text);outline:none;transition:border-color .2s ease, box-shadow .2s ease
+    }
+    .field input:focus,.field select:focus,.field textarea:focus{
+      border-color:rgba(11,117,223,.48);box-shadow:0 0 0 5px rgba(11,117,223,.1)
+    }
+    .field textarea{min-height:108px;resize:vertical}
+    .form-helper{color:var(--muted);font-size:.86rem}
+    .form-message{
+      display:none;padding:14px 16px;border-radius:16px;
+      background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.18);
+      color:#10703a;font-size:.92rem;font-weight:700
+    }
+    .form-message.show{display:block}
 
-    .form-card-head {
-      padding: 26px 26px 18px;
+    .mini-proof{
+      margin-top:-8px;position:relative;z-index:2
+    }
+    .mini-proof-grid{
+      display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px
+    }
+    .mini-proof-card,.card{
+      background:rgba(255,255,255,.88);backdrop-filter:blur(14px);
+      border:1px solid rgba(11,117,223,.1);border-radius:24px;box-shadow:var(--shadow)
+    }
+    .mini-proof-card{padding:20px 18px;text-align:center}
+    .mini-proof-card strong{
+      display:block;font-family:'Montserrat',sans-serif;font-size:1.04rem;margin-bottom:6px
+    }
+    .mini-proof-card span{display:block;color:var(--muted);font-size:.92rem}
+
+    .services-wrap{
+      display:grid;grid-template-columns:.92fr 1.08fr;gap:24px;align-items:stretch
+    }
+    .services-media{
+      border-radius:30px;overflow:hidden;min-height:100%;
       background:
-        linear-gradient(135deg, rgba(10,111,214,0.10), rgba(37,211,102,0.06));
-      border-bottom: 1px solid rgba(10,111,214,0.08);
+        linear-gradient(135deg, rgba(7,26,49,.76), rgba(11,117,223,.28)),
+        url('galeria-01.png') center/cover;
+      box-shadow:var(--shadow);padding:28px;color:#fff;display:flex;flex-direction:column;justify-content:flex-end
+    }
+    .services-media h3{
+      font-family:'Montserrat',sans-serif;font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.02;margin:14px 0 10px
+    }
+    .services-media p{max-width:480px;color:rgba(255,255,255,.88)}
+    .services-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .card{padding:28px}
+    .icon-wrap{
+      width:56px;height:56px;border-radius:18px;display:inline-flex;align-items:center;justify-content:center;
+      color:var(--primary);background:linear-gradient(135deg, rgba(11,117,223,.12), rgba(34,197,94,.08));
+      margin-bottom:18px
+    }
+    .card h3{
+      font-family:'Montserrat',sans-serif;font-size:1.22rem;line-height:1.12;margin-bottom:10px
+    }
+    .card p{color:var(--muted);font-size:.96rem}
+    .bullet-list{list-style:none;display:grid;gap:10px;margin-top:16px}
+    .bullet-list li{
+      display:flex;gap:10px;align-items:flex-start;color:var(--text);font-size:.93rem;font-weight:600
+    }
+    .bullet-list li::before{
+      content:"";width:8px;height:8px;border-radius:999px;background:var(--primary);flex-shrink:0;margin-top:8px
     }
 
-    .form-card-head h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1.55rem;
-      line-height: 1.08;
-      margin-top: 10px;
-      margin-bottom: 8px;
+    .advantages-grid,.faq-grid{
+      display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px
     }
 
-    .form-card-head p {
-      color: var(--muted);
-      font-size: 0.95rem;
+    .reviews-layout{
+      display:grid;grid-template-columns:.82fr 1.18fr;gap:22px;align-items:start
+    }
+    .reviews-summary{position:sticky;top:108px}
+    .score{
+      display:flex;align-items:center;gap:14px;margin:18px 0 16px
+    }
+    .score strong{
+      font-family:'Montserrat',sans-serif;font-size:clamp(2.8rem,5vw,4rem);line-height:1
+    }
+    .stars{letter-spacing:.16em;color:#f5b300;font-weight:900}
+    .reviews-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    .review-note{
+      background:rgba(11,117,223,.06);border-radius:18px;padding:16px;margin-top:18px;color:var(--text);font-size:.95rem
+    }
+    .google-chip{
+      display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:999px;
+      background:rgba(11,117,223,.08);color:var(--primary);font-weight:800;font-size:.84rem
     }
 
-    .lead-form {
-      padding: 24px 26px 28px;
-      display: grid;
-      gap: 14px;
+    .location-grid{
+      display:grid;grid-template-columns:.92fr 1.08fr;gap:24px;align-items:stretch
+    }
+    .location-info{display:grid;gap:16px}
+    .simple-card{
+      padding:18px;border-radius:20px;background:rgba(255,255,255,.9);
+      border:1px solid rgba(11,117,223,.08)
+    }
+    .simple-card h3{
+      font-family:'Montserrat',sans-serif;font-size:1rem;margin-bottom:8px
+    }
+    .map-frame{
+      width:100%;min-height:100%;border:0;border-radius:30px;box-shadow:var(--shadow)
     }
 
-    .field {
-      display: grid;
-      gap: 8px;
+    .faq-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .cta-band{padding:0 0 88px}
+    .cta-card{
+      position:relative;overflow:hidden;border-radius:32px;box-shadow:var(--shadow);
+      background:linear-gradient(135deg, rgba(7,26,49,.96), rgba(11,117,223,.88));color:#fff
     }
-
-    .field label {
-      font-size: 0.88rem;
-      color: var(--muted);
-      font-weight: 700;
-    }
-
-    .field input,
-    .field textarea,
-    .field select {
-      width: 100%;
-      border: 1px solid rgba(10,111,214,0.14);
-      background: #fff;
-      color: var(--text);
-      border-radius: 16px;
-      padding: 14px 16px;
-      outline: none;
-      transition: border-color 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .field input:focus,
-    .field textarea:focus,
-    .field select:focus {
-      border-color: rgba(10,111,214,0.45);
-      box-shadow: 0 0 0 5px rgba(10,111,214,0.10);
-    }
-
-    .field textarea {
-      min-height: 112px;
-      resize: vertical;
-    }
-
-    .form-row {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
-    }
-
-    .form-helper {
-      color: var(--muted);
-      font-size: 0.84rem;
-      margin-top: -2px;
-    }
-
-    .form-message {
-      display: none;
-      padding: 14px 16px;
-      border-radius: 16px;
-      font-size: 0.92rem;
-      font-weight: 700;
-    }
-
-    .form-message.success {
-      display: block;
-      background: rgba(37,211,102,0.12);
-      color: #11733b;
-      border: 1px solid rgba(37,211,102,0.18);
-    }
-
-    .proof-strip {
-      margin-top: -16px;
-      position: relative;
-      z-index: 3;
-    }
-
-    .proof-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 16px;
-    }
-
-    .proof-card {
-      background: rgba(255,255,255,0.82);
-      border: 1px solid rgba(10,111,214,0.10);
-      border-radius: 22px;
-      padding: 22px 18px;
-      box-shadow: var(--shadow);
-      text-align: center;
-    }
-
-    .proof-card strong {
-      display: block;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1.2rem;
-      margin-bottom: 6px;
-      color: var(--primary-dark);
-    }
-
-    .proof-card span {
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-
-    .services {
+    .cta-card::before{
+      content:"";position:absolute;inset:0;
       background:
-        linear-gradient(180deg, rgba(255,255,255,0.4), rgba(255,255,255,0.88)),
-        url('banner-servicos.png') center/cover;
+        radial-gradient(circle at 85% 18%, rgba(255,255,255,.18), transparent 18%),
+        radial-gradient(circle at 10% 88%, rgba(34,197,94,.22), transparent 24%);
+      pointer-events:none
+    }
+    .cta-inner{
+      position:relative;display:grid;grid-template-columns:1.08fr .92fr;gap:28px;
+      padding:clamp(28px,5vw,46px);align-items:center
+    }
+    .cta-inner h2{
+      font-family:'Montserrat',sans-serif;font-size:clamp(2rem,5vw,3.05rem);
+      line-height:1.02;letter-spacing:-.04em;margin:16px 0 12px
+    }
+    .cta-inner p{color:rgba(255,255,255,.88);max-width:620px}
+    .cta-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+    .cta-panel{
+      background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.16);
+      border-radius:26px;backdrop-filter:blur(14px);padding:24px
     }
 
-    .services-grid,
-    .benefits-grid,
-    .areas-grid,
-    .faq-grid {
-      display: grid;
-      gap: 18px;
+    .site-footer{
+      background:#061321;color:rgba(255,255,255,.8);padding:32px 0 24px
+    }
+    .footer-grid{
+      display:grid;grid-template-columns:1fr .8fr .85fr;gap:22px;align-items:start
+    }
+    .footer-brand img{height:52px;width:auto;margin-bottom:14px}
+    .footer-brand p,.footer-col p,.footer-col a{
+      color:rgba(255,255,255,.76);font-size:.94rem
+    }
+    .footer-col h4{
+      font-family:'Montserrat',sans-serif;font-size:1rem;color:#fff;margin-bottom:14px
+    }
+    .footer-links{display:grid;gap:10px}
+    .footer-bottom{
+      margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,.08);
+      display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.88rem
     }
 
-    .services-grid {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+    .whatsapp-widget{
+      position:fixed;right:22px;bottom:22px;z-index:999;display:flex;flex-direction:column;align-items:flex-end;gap:12px
+    }
+    .widget-panel{
+      width:min(360px, calc(100vw - 28px));display:none;overflow:hidden;border-radius:24px;
+      background:rgba(255,255,255,.97);border:1px solid rgba(11,117,223,.1);box-shadow:0 24px 60px rgba(16,42,67,.22)
+    }
+    .widget-panel.open{display:block}
+    .widget-head{
+      padding:18px 18px 14px;background:linear-gradient(135deg, #0b75df, #19a1ff);color:#fff
+    }
+    .widget-head strong{
+      display:block;font-family:'Montserrat',sans-serif;font-size:1rem;margin-bottom:4px
+    }
+    .widget-head span{font-size:.88rem;color:rgba(255,255,255,.86)}
+    .widget-body{display:grid;gap:12px;padding:18px}
+    .widget-bubble{
+      padding:14px 16px;border-radius:18px;background:#f2f8ff;border:1px solid rgba(11,117,223,.08);color:var(--text)
+    }
+    .widget-actions{display:grid;gap:10px}
+    .widget-trigger{
+      width:68px;height:68px;border-radius:22px;border:0;background:linear-gradient(135deg, var(--accent), var(--accent-dark));
+      color:#fff;display:inline-flex;align-items:center;justify-content:center;
+      box-shadow:0 16px 36px rgba(34,197,94,.35);cursor:pointer
+    }
+    .widget-trigger svg{width:32px;height:32px}
+    .sr-only{
+      position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0
     }
 
-    .card {
-      background: rgba(255,255,255,0.88);
-      border: 1px solid rgba(10,111,214,0.10);
-      border-radius: 24px;
-      padding: 28px;
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(14px);
+    @media (min-width:861px){
+      .mobile-nav{display:none !important}
     }
-
-    .service-card .icon-wrap,
-    .benefit-card .icon-wrap,
-    .area-card .icon-wrap,
-    .faq-card .icon-wrap,
-    .review-card .icon-wrap {
-      width: 56px;
-      height: 56px;
-      border-radius: 18px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, rgba(10,111,214,0.12), rgba(37,211,102,0.10));
-      color: var(--primary);
-      margin-bottom: 18px;
+    @media (max-width:1120px){
+      .hero-grid,.services-wrap,.reviews-layout,.location-grid,.cta-inner{grid-template-columns:1fr}
+      .services-grid,.advantages-grid,.mini-proof-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .reviews-grid,.footer-grid{grid-template-columns:1fr 1fr}
+      .reviews-summary{position:static}
+      .hero-panel{min-height:auto}
     }
-
-    .card h3 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1.25rem;
-      line-height: 1.15;
-      margin-bottom: 10px;
+    @media (max-width:860px){
+      .desktop-nav,.phone-pill,.header-actions .btn{display:none}
+      .menu-toggle{display:inline-flex}
+      .site-header .container{min-height:82px}
+      .brand img{height:52px}
+      .brand-copy span{display:none}
+      .hero{padding-top:22px}
+      .hero-points,.form-row,.services-grid,.advantages-grid,.mini-proof-grid,.reviews-grid,.faq-grid,.footer-grid{grid-template-columns:1fr}
+      .section{padding:76px 0}
     }
-
-    .card p {
-      color: var(--muted);
-      font-size: 0.96rem;
-    }
-
-    .service-card ul {
-      list-style: none;
-      display: grid;
-      gap: 10px;
-      margin-top: 16px;
-    }
-
-    .service-card li {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: var(--text);
-      font-size: 0.92rem;
-      font-weight: 600;
-    }
-
-    .service-card li::before {
-      content: "";
-      width: 8px;
-      height: 8px;
-      border-radius: 999px;
-      background: var(--primary);
-      flex-shrink: 0;
-    }
-
-    .benefits-grid {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-
-    .benefit-card {
-      min-height: 100%;
-    }
-
-    .showcase {
-      display: grid;
-      grid-template-columns: 0.95fr 1.05fr;
-      gap: 24px;
-      align-items: stretch;
-    }
-
-    .showcase-media {
-      position: relative;
-      overflow: hidden;
-      min-height: 100%;
-      border-radius: 30px;
-      background: linear-gradient(135deg, rgba(7,27,51,0.72), rgba(10,111,214,0.22)), url('galeria-01.png') center/cover;
-      box-shadow: var(--shadow);
-      padding: 28px;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-    }
-
-    .showcase-media h3 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: clamp(1.8rem, 4vw, 2.6rem);
-      line-height: 1.04;
-      margin-bottom: 12px;
-    }
-
-    .showcase-media p {
-      max-width: 460px;
-      color: rgba(255,255,255,0.88);
-    }
-
-    .areas-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .review-section {
-      background: linear-gradient(180deg, #f7fbff 0%, #eef6fd 100%);
-    }
-
-    .review-wrap {
-      display: grid;
-      grid-template-columns: 0.78fr 1.22fr;
-      gap: 22px;
-      align-items: start;
-    }
-
-    .review-summary {
-      position: sticky;
-      top: 110px;
-    }
-
-    .review-score {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      margin: 18px 0 14px;
-    }
-
-    .review-score strong {
-      font-family: 'Montserrat', sans-serif;
-      font-size: clamp(2.6rem, 5vw, 4rem);
-      line-height: 1;
-    }
-
-    .stars {
-      letter-spacing: 0.16em;
-      color: #f6b500;
-      font-size: 1.1rem;
-      font-weight: 900;
-    }
-
-    .review-cards {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .review-card blockquote {
-      color: var(--text);
-      font-size: 0.98rem;
-      margin-bottom: 18px;
-    }
-
-    .review-card-footer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      color: var(--muted);
-      font-size: 0.88rem;
-      font-weight: 700;
-    }
-
-    .review-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 10px 14px;
-      border-radius: 999px;
-      background: rgba(10,111,214,0.08);
-      color: var(--primary);
-      font-weight: 800;
-      font-size: 0.84rem;
-    }
-
-    .local-grid {
-      display: grid;
-      grid-template-columns: 0.95fr 1.05fr;
-      gap: 24px;
-      align-items: stretch;
-    }
-
-    .local-card {
-      min-height: 100%;
-    }
-
-    .map-frame {
-      width: 100%;
-      min-height: 100%;
-      border: 0;
-      border-radius: 30px;
-      box-shadow: var(--shadow);
-      background: #dfeffc;
-    }
-
-    .faq-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .faq-card h3 {
-      font-size: 1.05rem;
-    }
-
-    .cta-band {
-      padding: 0 0 92px;
-    }
-
-    .cta-card {
-      overflow: hidden;
-      position: relative;
-      border-radius: 32px;
-      background:
-        linear-gradient(135deg, rgba(7,27,51,0.95), rgba(10,111,214,0.86));
-      color: #fff;
-      box-shadow: var(--shadow);
-    }
-
-    .cta-card::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(circle at 85% 15%, rgba(255,255,255,0.20), transparent 18%),
-        radial-gradient(circle at 12% 80%, rgba(37,211,102,0.20), transparent 22%);
-      pointer-events: none;
-    }
-
-    .cta-inner {
-      position: relative;
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 28px;
-      padding: clamp(28px, 5vw, 46px);
-      align-items: center;
-    }
-
-    .cta-inner h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: clamp(2rem, 5vw, 3.1rem);
-      line-height: 1.03;
-      letter-spacing: -0.04em;
-      margin: 16px 0 12px;
-    }
-
-    .cta-inner p {
-      color: rgba(255,255,255,0.88);
-      max-width: 620px;
-    }
-
-    .cta-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 26px;
-    }
-
-    .cta-panel {
-      background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.16);
-      backdrop-filter: blur(14px);
-      border-radius: 26px;
-      padding: 24px;
-    }
-
-    .cta-list {
-      list-style: none;
-      display: grid;
-      gap: 12px;
-    }
-
-    .cta-list li {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 700;
-      color: rgba(255,255,255,0.92);
-    }
-
-    .cta-list li::before {
-      content: "";
-      width: 9px;
-      height: 9px;
-      border-radius: 999px;
-      background: #7ef0aa;
-      flex-shrink: 0;
-    }
-
-    .site-footer {
-      padding: 30px 0 24px;
-      background: #051423;
-      color: rgba(255,255,255,0.8);
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 1fr 0.8fr 0.8fr;
-      gap: 22px;
-      align-items: start;
-    }
-
-    .footer-brand img {
-      height: 60px;
-      width: auto;
-      margin-bottom: 14px;
-    }
-
-    .footer-brand p,
-    .footer-col p,
-    .footer-col a {
-      color: rgba(255,255,255,0.74);
-      font-size: 0.94rem;
-    }
-
-    .footer-col h4 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1rem;
-      margin-bottom: 14px;
-      color: #fff;
-    }
-
-    .footer-links {
-      display: grid;
-      gap: 10px;
-    }
-
-    .footer-bottom {
-      margin-top: 22px;
-      padding-top: 18px;
-      border-top: 1px solid rgba(255,255,255,0.08);
-      display: flex;
-      justify-content: space-between;
-      gap: 14px;
-      flex-wrap: wrap;
-      font-size: 0.88rem;
-    }
-
-    .whatsapp-widget {
-      position: fixed;
-      right: 22px;
-      bottom: 22px;
-      z-index: 999;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      gap: 12px;
-    }
-
-    .widget-panel {
-      width: min(360px, calc(100vw - 28px));
-      background: rgba(255,255,255,0.96);
-      border: 1px solid rgba(10,111,214,0.10);
-      border-radius: 24px;
-      box-shadow: 0 24px 60px rgba(7,27,51,0.22);
-      overflow: hidden;
-      display: none;
-    }
-
-    .widget-panel.open { display: block; }
-
-    .widget-head {
-      padding: 18px 18px 14px;
-      background: linear-gradient(135deg, #0A6FD6, #12a4f0);
-      color: #fff;
-    }
-
-    .widget-head strong {
-      display: block;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1rem;
-      margin-bottom: 4px;
-    }
-
-    .widget-head span {
-      font-size: 0.88rem;
-      color: rgba(255,255,255,0.86);
-    }
-
-    .widget-body {
-      padding: 18px;
-      display: grid;
-      gap: 12px;
-    }
-
-    .widget-bubble {
-      padding: 14px 16px;
-      border-radius: 18px;
-      background: #f1f8ff;
-      color: var(--text);
-      font-size: 0.93rem;
-      border: 1px solid rgba(10,111,214,0.08);
-    }
-
-    .widget-actions {
-      display: grid;
-      gap: 10px;
-    }
-
-    .widget-trigger {
-      width: 68px;
-      height: 68px;
-      border-radius: 22px;
-      border: 0;
-      background: linear-gradient(135deg, var(--accent), #15be58);
-      box-shadow: 0 16px 36px rgba(37,211,102,0.35);
-      color: #fff;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: transform 0.22s ease;
-    }
-
-    .widget-trigger:hover { transform: translateY(-2px) scale(1.02); }
-
-    .widget-trigger svg { width: 32px; height: 32px; }
-
-    .hide-mobile { display: inline-flex; }
-
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0,0,0,0);
-      white-space: nowrap;
-      border: 0;
-    }
-
-    @media (max-width: 1100px) {
-      .hero-grid,
-      .showcase,
-      .review-wrap,
-      .local-grid,
-      .cta-inner {
-        grid-template-columns: 1fr;
-      }
-
-      .review-summary { position: static; }
-
-      .proof-grid,
-      .benefits-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .services-grid,
-      .review-cards,
-      .faq-grid,
-      .footer-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .areas-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-panel { min-height: auto; }
-    }
-
-    @media (max-width: 860px) {
-      .desktop-nav,
-      .phone-pill,
-      .header-actions .btn {
-        display: none;
-      }
-
-      .menu-toggle {
-        display: inline-flex;
-      }
-
-      .mobile-nav.show {
-        display: block;
-      }
-
-      .proof-grid,
-      .benefits-grid,
-      .services-grid,
-      .review-cards,
-      .faq-grid,
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-highlights,
-      .form-row {
-        grid-template-columns: 1fr;
-      }
-
-      .section {
-        padding: 80px 0;
-      }
-    }
-
-    @media (max-width: 560px) {
-      .site-header .container {
-        gap: 12px;
-      }
-
-      .brand img { height: 54px; }
-      .brand-copy span { display: none; }
-
-      .hero {
-        padding-top: 24px;
-      }
-
-      .hero-panel,
-      .form-card,
-      .cta-card,
-      .map-frame,
-      .showcase-media {
-        border-radius: 24px;
-      }
-
-      .hero-content,
-      .lead-form,
-      .form-card-head {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-
-      .btn {
-        width: 100%;
-      }
-
-      .hero-actions,
-      .cta-actions {
-        flex-direction: column;
-      }
-
-      .widget-trigger {
-        width: 62px;
-        height: 62px;
-        border-radius: 20px;
-      }
+    @media (max-width:560px){
+      .brand-copy strong{font-size:.92rem}
+      .hero-panel,.quote-card,.services-media,.map-frame,.cta-card{border-radius:24px}
+      .hero-content,.quote-head,.lead-form{padding-left:20px;padding-right:20px}
+      .hero-actions,.cta-actions{flex-direction:column}
+      .btn{width:100%}
+      .widget-trigger{width:62px;height:62px;border-radius:20px}
     }
   </style>
 </head>
@@ -1069,7 +412,7 @@
   <header class="site-header">
     <div class="container">
       <a class="brand" href="#inicio" aria-label="Água Milagrosa Poços Artesianos">
-        <img src="logo.png" alt="Água Milagrosa Poços Artesianos" />
+        <img src="logo-site.svg" alt="Água Milagrosa Poços Artesianos" />
         <div class="brand-copy">
           <strong>Água Milagrosa</strong>
           <span>Perfuração, manutenção e regularização</span>
@@ -1077,15 +420,15 @@
       </a>
 
       <nav class="desktop-nav" aria-label="Principal">
-        <a class="nav-link" href="#servicos">Serviços</a>
-        <a class="nav-link" href="#vantagens">Vantagens</a>
-        <a class="nav-link" href="#avaliacoes">Avaliações</a>
-        <a class="nav-link" href="#localizacao">Localização</a>
-        <a class="nav-link" href="#faq">Dúvidas</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#vantagens">Vantagens</a>
+        <a href="#google">Google</a>
+        <a href="#localizacao">Localização</a>
+        <a href="#duvidas">Dúvidas</a>
       </nav>
 
       <div class="header-actions">
-        <a class="phone-pill" href="tel:5517981079757" aria-label="Ligar agora para Água Milagrosa">
+        <a class="phone-pill" href="tel:5517981079757">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.62 10.79a15.54 15.54 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.57 1 1 0 0 1-.24 1l-2.2 2.22Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
           (17) 98107-9757
         </a>
@@ -1105,9 +448,9 @@
       <div class="mobile-nav-inner">
         <a href="#servicos">Serviços</a>
         <a href="#vantagens">Vantagens</a>
-        <a href="#avaliacoes">Avaliações</a>
+        <a href="#google">Google</a>
         <a href="#localizacao">Localização</a>
-        <a href="#faq">Dúvidas</a>
+        <a href="#duvidas">Dúvidas</a>
         <a href="tel:5517981079757">Ligar agora</a>
         <a href="https://wa.me/5517981079757?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento%20para%20po%C3%A7o%20artesiano." target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
       </div>
@@ -1119,46 +462,40 @@
       <div class="container hero-grid">
         <div class="hero-panel">
           <div class="hero-content">
-            <span class="eyebrow">
-              Solução completa em poços artesianos
-            </span>
-            <h1>Seu poço artesiano com cara de solução, não de dor de cabeça.</h1>
-            <p>
-              Perfuração, manutenção e regularização com atendimento ágil, orientação técnica e caminho rápido para pedir orçamento direto no WhatsApp.
-            </p>
+            <span class="eyebrow">Atendimento em Adolfo/SP e região</span>
+            <h1>Poço artesiano com atendimento rápido, orientação clara e orçamento sem enrolação.</h1>
+            <p>Perfuração, manutenção e regularização para propriedades, áreas rurais, empresas e clientes que precisam resolver o problema com mais segurança.</p>
 
             <div class="hero-actions">
-              <a class="btn btn-primary" href="https://wa.me/5517981079757?text=Ol%C3%A1!%20Quero%20fazer%20um%20or%C3%A7amento%20para%20po%C3%A7o%20artesiano." target="_blank" rel="noopener noreferrer">
+              <a class="btn btn-primary" href="https://wa.me/5517981079757?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20para%20po%C3%A7o%20artesiano." target="_blank" rel="noopener noreferrer">
                 <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.051 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 0 1 6.988 2.898 9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884Z"/></svg>
                 Pedir orçamento agora
               </a>
-              <a class="btn btn-secondary" href="#avaliacoes">
-                Ver confiança no Google
-              </a>
+              <a class="btn btn-outline" href="#google">Ver no Google</a>
             </div>
 
-            <div class="hero-highlights">
+            <div class="hero-points">
               <div class="hero-chip">
                 <strong>Perfuração</strong>
-                <span>Projeto pensado para desempenho, segurança e economia.</span>
+                <span>Mais autonomia e solução bem explicada desde o primeiro contato.</span>
               </div>
               <div class="hero-chip">
                 <strong>Manutenção</strong>
-                <span>Atendimento preventivo e corretivo para evitar parada.</span>
+                <span>Atendimento preventivo e corretivo para evitar dor de cabeça.</span>
               </div>
               <div class="hero-chip">
                 <strong>Regularização</strong>
-                <span>Apoio para deixar a operação mais organizada e tranquila.</span>
+                <span>Mais organização documental e mais tranquilidade para o cliente.</span>
               </div>
             </div>
           </div>
         </div>
 
-        <aside class="form-card" aria-label="Formulário de orçamento">
-          <div class="form-card-head">
-            <span class="eyebrow light">Cadastro rápido para orçamento</span>
-            <h2>Preencha e vá direto pro WhatsApp com a mensagem pronta.</h2>
-            <p>Mais simples que cano reto: você envia seus dados, a mensagem é montada e já abre no atendimento.</p>
+        <aside class="quote-card" aria-label="Formulário de orçamento">
+          <div class="quote-head">
+            <span class="eyebrow">Cadastro rápido</span>
+            <h2>Preencha e abra o WhatsApp com a mensagem pronta.</h2>
+            <p>Você informa o básico e o site já monta a mensagem para agilizar o atendimento comercial.</p>
           </div>
 
           <form class="lead-form" id="leadForm">
@@ -1179,7 +516,7 @@
                 <input id="cidade" name="cidade" type="text" placeholder="Ex.: Adolfo/SP" />
               </div>
               <div class="field">
-                <label for="servico">Tipo de serviço</label>
+                <label for="servico">Serviço</label>
                 <select id="servico" name="servico">
                   <option value="Perfuração de poço artesiano">Perfuração de poço artesiano</option>
                   <option value="Manutenção de poço artesiano">Manutenção de poço artesiano</option>
@@ -1190,89 +527,99 @@
             </div>
 
             <div class="field">
-              <label for="mensagem">Detalhes do atendimento</label>
-              <textarea id="mensagem" name="mensagem" placeholder="Fale rapidamente sobre sua necessidade, local da obra ou urgência."></textarea>
+              <label for="mensagem">Detalhes</label>
+              <textarea id="mensagem" name="mensagem" placeholder="Fale rapidamente sobre local da obra, urgência ou sua necessidade."></textarea>
             </div>
 
-            <p class="form-helper">Ao enviar, você será redirecionado para o WhatsApp com tudo preenchido.</p>
+            <p class="form-helper">Ao enviar, a conversa abre direto no WhatsApp da Água Milagrosa.</p>
+
             <button class="btn btn-primary" type="submit">
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.051 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 0 1 6.988 2.898 9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884Z"/></svg>
               Ir para o WhatsApp
             </button>
+
             <div class="form-message" id="formMessage"></div>
           </form>
         </aside>
       </div>
     </section>
 
-    <section class="proof-strip">
-      <div class="container proof-grid">
-        <div class="proof-card">
-          <strong>Atendimento rápido</strong>
-          <span>CTA principal no WhatsApp em destaque em todo o site.</span>
+    <section class="mini-proof">
+      <div class="container mini-proof-grid">
+        <div class="mini-proof-card">
+          <strong>Resposta rápida</strong>
+          <span>CTA principal no WhatsApp em pontos estratégicos do site.</span>
         </div>
-        <div class="proof-card">
-          <strong>SEO local</strong>
-          <span>Estrutura preparada para buscas de Adolfo/SP e região.</span>
+        <div class="mini-proof-card">
+          <strong>Presença local</strong>
+          <span>Endereço, mapa e chamadas focadas em Adolfo/SP e região.</span>
         </div>
-        <div class="proof-card">
+        <div class="mini-proof-card">
           <strong>Mais confiança</strong>
-          <span>Seção para prova social e acesso direto às avaliações no Google.</span>
+          <span>Acesso direto ao Google para o cliente conferir a empresa.</span>
         </div>
-        <div class="proof-card">
-          <strong>Pronto para Coolify</strong>
-          <span>Site estático, leve e sem dependência de build complexa.</span>
+        <div class="mini-proof-card">
+          <strong>Visual mais premium</strong>
+          <span>Leitura limpa, hierarquia melhor e navegação mais clara.</span>
         </div>
       </div>
     </section>
 
-    <section class="section services" id="servicos">
+    <section class="section" id="servicos">
       <div class="container">
         <div class="section-title">
-          <span class="eyebrow light">Serviços principais</span>
-          <h2>Uma operação mais premium, mais clara e mais vendedora.</h2>
-          <p>Organizamos os serviços com linguagem direta, leitura limpa e foco em conversão, sem cara de site travado do passado.</p>
+          <span class="eyebrow">Serviços</span>
+          <h2>Soluções em poços artesianos com linguagem clara e pegada mais comercial.</h2>
+          <p>O visitante entende rápido o que a empresa faz, sente mais confiança e encontra o caminho curto para pedir orçamento.</p>
         </div>
 
-        <div class="services-grid">
-          <article class="card service-card">
-            <div class="icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v18M8 7h8M7 21h10M8 3h8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M9 7v14M15 7v14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" opacity=".6"/></svg>
-            </div>
-            <h3>Perfuração de poços artesianos</h3>
-            <p>Atendimento orientado para quem quer sair da dependência da rede pública com mais autonomia, economia e previsibilidade.</p>
-            <ul>
-              <li>Atendimento comercial ágil</li>
-              <li>Explicação simples da solução</li>
-              <li>CTA direto para orçamento</li>
-            </ul>
-          </article>
+        <div class="services-wrap">
+          <div class="services-media">
+            <span class="eyebrow">Água Milagrosa</span>
+            <h3>Atendimento sério para quem precisa resolver, não perder tempo.</h3>
+            <p>Uma apresentação mais forte para transmitir confiança já na primeira dobra e sustentar melhor a decisão do lead.</p>
+          </div>
 
-          <article class="card service-card">
-            <div class="icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 7.5 17 4.5l-2 2 3 3 2-2ZM13.5 8 5 16.5V19h2.5L16 10.5 13.5 8Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M4 4h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" opacity=".6"/></svg>
-            </div>
-            <h3>Manutenção de poços</h3>
-            <p>Ideal para quem precisa restaurar performance, reduzir risco de parada e manter o sistema funcionando com mais tranquilidade.</p>
-            <ul>
-              <li>Preventiva e corretiva</li>
-              <li>Comunicação clara sobre a demanda</li>
-              <li>Abertura rápida via WhatsApp</li>
-            </ul>
-          </article>
+          <div class="services-grid">
+            <article class="card">
+              <div class="icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v18M8 7h8M7 21h10M8 3h8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M9 7v14M15 7v14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" opacity=".6"/></svg>
+              </div>
+              <h3>Perfuração</h3>
+              <p>Atendimento para quem precisa implantar um poço artesiano com mais autonomia e segurança.</p>
+              <ul class="bullet-list">
+                <li>Atendimento comercial ágil</li>
+                <li>Explicação direta da solução</li>
+                <li>Orçamento mais fácil de solicitar</li>
+              </ul>
+            </article>
 
-          <article class="card service-card">
-            <div class="icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 3h7l5 5v13H7z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M14 3v5h5M10 13h6M10 17h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
-            </div>
-            <h3>Regularização</h3>
-            <p>Uma área que gera confiança porque reduz aquele cenário nebuloso de documentação e ajuda o cliente a entender o próximo passo.</p>
-            <ul>
-              <li>Mais percepção de organização</li>
-              <li>Mais confiança comercial</li>
-              <li>Mais valor percebido no atendimento</li>
-            </ul>
-          </article>
+            <article class="card">
+              <div class="icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 7.5 17 4.5l-2 2 3 3 2-2ZM13.5 8 5 16.5V19h2.5L16 10.5 13.5 8Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M4 4h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" opacity=".6"/></svg>
+              </div>
+              <h3>Manutenção</h3>
+              <p>Serviço para prevenir falhas, restaurar desempenho e reduzir risco de parada no sistema.</p>
+              <ul class="bullet-list">
+                <li>Preventiva e corretiva</li>
+                <li>Mais tranquilidade operacional</li>
+                <li>Contato rápido via WhatsApp</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 3h7l5 5v13H7z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M14 3v5h5M10 13h6M10 17h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              </div>
+              <h3>Regularização</h3>
+              <p>Uma frente importante para clientes que querem mais clareza documental e menos insegurança no processo.</p>
+              <ul class="bullet-list">
+                <li>Mais percepção de organização</li>
+                <li>Mais confiança comercial</li>
+                <li>Mais valor percebido no atendimento</li>
+              </ul>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -1280,184 +627,124 @@
     <section class="section" id="vantagens">
       <div class="container">
         <div class="section-title">
-          <span class="eyebrow light">Por que esse site converte melhor</span>
-          <h2>Troca visual carregado por uma experiência premium que empurra o lead para ação.</h2>
-          <p>A navegação ficou mais limpa, o WhatsApp assumiu o volante e a prova social entrou para reduzir atrito na tomada de decisão.</p>
+          <span class="eyebrow">Vantagens</span>
+          <h2>O visitante encontra resposta, contexto local e contato sem tropeçar no caminho.</h2>
+          <p>Menos poluição visual, mais leitura útil e um funil que leva o lead mais rápido para a conversa comercial.</p>
         </div>
 
-        <div class="benefits-grid">
-          <article class="card benefit-card">
+        <div class="advantages-grid">
+          <article class="card">
             <div class="icon-wrap">
               <svg viewBox="0 0 24 24" fill="none"><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.7"/></svg>
             </div>
-            <h3>Mais velocidade</h3>
-            <p>HTML estático, carregamento leve e estrutura simples para publicar no Coolify sem novela de dependências.</p>
+            <h3>Mais agilidade</h3>
+            <p>Botões e formulário conectados ao WhatsApp para reduzir tempo entre visita e contato.</p>
           </article>
-          <article class="card benefit-card">
+
+          <article class="card">
             <div class="icon-wrap">
               <svg viewBox="0 0 24 24" fill="none"><path d="M4 19V8l8-4 8 4v11" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 14h6M9 18h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
             </div>
             <h3>Mais confiança local</h3>
-            <p>Mapa, endereço, contato e texto focado em busca local ajudam o site a parecer mais sólido para o cliente e para o Google.</p>
+            <p>Endereço, mapa e referência geográfica reforçam a presença da marca para o cliente e para a busca local.</p>
           </article>
-          <article class="card benefit-card">
+
+          <article class="card">
             <div class="icon-wrap">
               <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.35-7-10a4 4 0 0 1 7-2.65A4 4 0 0 1 19 11c0 5.65-7 10-7 10Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
             </div>
             <h3>Mais intenção de contato</h3>
-            <p>Formulário de orçamento transformado em ponte para o WhatsApp, sem atrito e sem botão morto.</p>
+            <p>O site deixa claro o serviço, a região e o próximo passo para solicitar orçamento.</p>
           </article>
-          <article class="card benefit-card">
+
+          <article class="card">
             <div class="icon-wrap">
               <svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7" opacity=".45"/></svg>
             </div>
-            <h3>Mais oportunidades</h3>
-            <p>Widget premium, CTA repetido nas áreas certas e seções organizadas para fazer o lead avançar sem se perder.</p>
+            <h3>Mais legibilidade</h3>
+            <p>Tipografia maior, contraste melhor e hierarquia visual mais acertada para leitura no desktop e no celular.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container showcase">
-        <div class="showcase-media">
-          <span class="eyebrow">Presença digital mais forte</span>
-          <h3>Visual premium com água azul no sangue e cara de empresa séria.</h3>
-          <p>O layout foi reposicionado para transmitir confiança, clareza e autoridade sem pesar a navegação.</p>
-        </div>
-
-        <div class="areas-grid">
-          <article class="card area-card">
-            <div class="icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
-            </div>
-            <h3>CTA principal no WhatsApp</h3>
-            <p>Botões estratégicos no header, hero, widget e faixa final para encurtar o caminho do lead.</p>
-          </article>
-
-          <article class="card area-card">
-            <div class="icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M12 21c4.97 0 9-4.03 9-9S16.97 3 12 3 3 7.03 3 12s4.03 9 9 9Z" stroke="currentColor" stroke-width="1.7"/><path d="M8 12.5 10.5 15 16 9.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <h3>Mensagem pré-preenchida</h3>
-            <p>O formulário gera a mensagem automaticamente para deixar o atendimento comercial mais redondo.</p>
-          </article>
-
-          <article class="card area-card">
-            <div class="icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M4 19h16M6 16V8M12 16V5M18 16v-3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
-            </div>
-            <h3>Blocos de prova social</h3>
-            <p>Seção de avaliações preparada para reforçar reputação e reduzir objeção logo antes do contato.</p>
-          </article>
-
-          <article class="card area-card">
-            <div class="icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none"><path d="m4 7 8-4 8 4-8 4-8-4ZM4 7v10l8 4 8-4V7" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
-            </div>
-            <h3>SEO local já embutido</h3>
-            <p>Título, descrição, headings e schema organizados para dar mais contexto geográfico ao projeto.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section review-section" id="avaliacoes">
-      <div class="container review-wrap">
-        <div class="card review-summary">
-          <span class="eyebrow light">Avaliações do Google</span>
-          <div class="review-score">
-            <strong>5.0</strong>
+    <section class="section" id="google">
+      <div class="container reviews-layout">
+        <div class="card reviews-summary">
+          <span class="eyebrow">Google e confiança</span>
+          <div class="score">
+            <strong>Google</strong>
             <div>
               <div class="stars">★★★★★</div>
-              <div class="review-badge">Prova social em destaque</div>
+              <div class="google-chip">Ver reputação direto no Maps</div>
             </div>
           </div>
-          <p style="margin-bottom:18px; color: var(--muted);">
-            A seção foi reorganizada para dar mais confiança comercial e direcionar o visitante para conferir a reputação da empresa no Google.
-          </p>
-          <a class="btn btn-secondary light" href="https://maps.app.goo.gl/RLTCVBAxEPG5Dbwn9" target="_blank" rel="noopener noreferrer">
-            Ver avaliações no Google
-          </a>
+          <p style="color:var(--muted);">Em vez de inventar depoimento, o site aponta direto para o Google. Isso deixa a prova social mais limpa, mais crível e mais fácil de conferir.</p>
+          <div class="review-note">
+            O visitante pode checar localização, avaliação e presença pública da empresa sem sair procurando.
+          </div>
+          <div style="margin-top:22px;">
+            <a class="btn btn-secondary" href="https://maps.app.goo.gl/RLTCVBAxEPG5Dbwn9" target="_blank" rel="noopener noreferrer">Abrir no Google Maps</a>
+          </div>
         </div>
 
-        <div class="review-cards">
-          <article class="card review-card">
+        <div class="reviews-grid">
+          <article class="card">
             <div class="icon-wrap">
               <svg viewBox="0 0 24 24" fill="none"><path d="M7 10h10M7 14h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M6 4h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H9l-5 3V6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
             </div>
-            <blockquote>
-              “Atendimento profissional, comunicação clara e serviço passado de forma mais organizada. O novo site joga a favor da confiança.”
-            </blockquote>
-            <div class="review-card-footer">
-              <span>Bloco editável de review</span>
-              <span>Google</span>
-            </div>
+            <h3>Sem review genérica</h3>
+            <p>Saem os textos artificiais e entra a chamada para a prova social real, do jeito que o cliente confia mais.</p>
           </article>
 
-          <article class="card review-card">
+          <article class="card">
             <div class="icon-wrap">
               <svg viewBox="0 0 24 24" fill="none"><path d="M12 21 9.5 18.5C5 14.4 2 11.7 2 8.5 2 5.9 3.9 4 6.5 4c1.5 0 3 .7 4 1.9C11.5 4.7 13 4 14.5 4 17.1 4 19 5.9 19 8.5c0 3.2-3 5.9-7.5 10L12 21Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
             </div>
-            <blockquote>
-              “Com o CTA no WhatsApp e a seção de confiança mais forte, a jornada ficou curta e bem mais comercial.”
-            </blockquote>
-            <div class="review-card-footer">
-              <span>Bloco editável de review</span>
-              <span>Google</span>
-            </div>
+            <h3>Mais credibilidade</h3>
+            <p>O lead não precisa acreditar na palavra do site. Ele clica, vê a empresa e forma confiança com referência pública.</p>
           </article>
 
-          <article class="card review-card">
+          <article class="card">
             <div class="icon-wrap">
               <svg viewBox="0 0 24 24" fill="none"><path d="M4 18h16M7 18V8M12 18V5M17 18v-7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
             </div>
-            <blockquote>
-              “O visual azul premium e a hierarquia de informação deixam a empresa com presença mais forte e mais séria.”
-            </blockquote>
-            <div class="review-card-footer">
-              <span>Bloco editável de review</span>
-              <span>Google</span>
-            </div>
+            <h3>Mais coerência visual</h3>
+            <p>O bloco ficou mais limpo e mais alinhado com o posicionamento premium do site.</p>
           </article>
 
-          <article class="card review-card">
+          <article class="card">
             <div class="icon-wrap">
               <svg viewBox="0 0 24 24" fill="none"><path d="M7 12.5 10 15.5 17 8.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/></svg>
             </div>
-            <blockquote>
-              “A estrutura ficou pronta para subir no Coolify sem depender de build complicada. Leve, limpa e objetiva.”
-            </blockquote>
-            <div class="review-card-footer">
-              <span>Bloco editável de review</span>
-              <span>Google</span>
-            </div>
+            <h3>Mais clique útil</h3>
+            <p>Em vez de ocupar espaço com texto vazio, o visitante recebe um botão direto para ver a empresa no Google.</p>
           </article>
         </div>
       </div>
     </section>
 
     <section class="section" id="localizacao">
-      <div class="container local-grid">
-        <article class="card local-card">
-          <span class="eyebrow light">SEO local e contato</span>
-          <h2 style="font-family:'Montserrat',sans-serif; font-size:clamp(1.8rem,4vw,2.8rem); line-height:1.05; margin:18px 0 12px;">Presença local que ajuda o Google e tranquiliza o cliente.</h2>
-          <p style="color:var(--muted); margin-bottom:22px;">
-            Estruturamos a área de localização para reforçar credibilidade, facilitar clique em rota e ajudar na leitura local do serviço.
-          </p>
+      <div class="container location-grid">
+        <article class="card">
+          <span class="eyebrow">Localização</span>
+          <h2 style="font-family:'Montserrat',sans-serif;font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.04;letter-spacing:-.04em;margin:18px 0 12px;">Presença local para ajudar o Google e tranquilizar o cliente.</h2>
+          <p style="color:var(--muted);margin-bottom:20px;">O endereço, o mapa e o canal de contato ficam bem visíveis para reforçar confiança e facilitar a decisão.</p>
 
-          <div style="display:grid; gap:16px;">
-            <div class="card" style="padding:18px; border-radius:20px; box-shadow:none;">
-              <h3 style="font-size:1rem;">Endereço</h3>
+          <div class="location-info">
+            <div class="simple-card">
+              <h3>Endereço</h3>
               <p>Rua José Luís Gandini, 1834<br>Distrito Industrial João Theodoro de Deus<br>Adolfo/SP</p>
             </div>
-            <div class="card" style="padding:18px; border-radius:20px; box-shadow:none;">
-              <h3 style="font-size:1rem;">Contato rápido</h3>
+
+            <div class="simple-card">
+              <h3>Contato rápido</h3>
               <p><a href="tel:5517981079757">(17) 98107-9757</a><br><a href="https://wa.me/5517981079757?text=Ol%C3%A1!%20Quero%20falar%20sobre%20po%C3%A7o%20artesiano." target="_blank" rel="noopener noreferrer">Atendimento no WhatsApp</a></p>
             </div>
-            <div class="card" style="padding:18px; border-radius:20px; box-shadow:none;">
-              <h3 style="font-size:1rem;">Atendimento</h3>
-              <p>Perfuração, manutenção e regularização de poços artesianos com foco em solução prática e comercial.</p>
+
+            <div class="simple-card">
+              <h3>Atendimento</h3>
+              <p>Perfuração, manutenção e regularização de poços artesianos para clientes que precisam de uma solução objetiva.</p>
             </div>
           </div>
         </article>
@@ -1472,45 +759,45 @@
       </div>
     </section>
 
-    <section class="section" id="faq">
+    <section class="section" id="duvidas">
       <div class="container">
         <div class="section-title">
-          <span class="eyebrow light">Dúvidas frequentes</span>
-          <h2>FAQ simples para segurar curiosidade e empurrar o próximo clique.</h2>
-          <p>Uma área rápida para reduzir objeção, melhorar leitura do serviço e gerar mais contato pelo WhatsApp.</p>
+          <span class="eyebrow">Dúvidas frequentes</span>
+          <h2>FAQ com perguntas que ajudam o lead a avançar para o orçamento.</h2>
+          <p>Menos papo de bastidor e mais respostas que fazem sentido para quem está procurando o serviço.</p>
         </div>
 
         <div class="faq-grid">
-          <article class="card faq-card">
+          <article class="card">
             <div class="icon-wrap">
               <svg viewBox="0 0 24 24" fill="none"><path d="M9.5 9a2.5 2.5 0 1 1 4.28 1.77c-.7.7-1.78 1.3-1.78 2.73" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="17.2" r=".8" fill="currentColor"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/></svg>
             </div>
             <h3>Como pedir orçamento?</h3>
-            <p>Preencha o formulário ou clique no WhatsApp. O site já foi pensado para levar o lead direto para o atendimento.</p>
+            <p>Você pode preencher o formulário do site ou tocar no botão do WhatsApp para falar direto com a Água Milagrosa.</p>
           </article>
 
-          <article class="card faq-card">
+          <article class="card">
             <div class="icon-wrap">
               <svg viewBox="0 0 24 24" fill="none"><path d="M4 19h16M7 16V8M12 16V5M17 16v-3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
             </div>
-            <h3>Quais serviços estão em destaque?</h3>
-            <p>Perfuração, manutenção e regularização de poços artesianos, com a comunicação organizada para facilitar entendimento e decisão.</p>
+            <h3>Quais serviços a empresa atende?</h3>
+            <p>Perfuração, manutenção e regularização de poços artesianos com foco em atendimento claro e rápido.</p>
           </article>
 
-          <article class="card faq-card">
+          <article class="card">
             <div class="icon-wrap">
               <svg viewBox="0 0 24 24" fill="none"><path d="m3 12 3-3 3 3M21 12l-3 3-3-3M6 9V6a3 3 0 0 1 3-3h2M18 15v3a3 3 0 0 1-3 3h-2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
-            <h3>O site está pronto para Coolify?</h3>
-            <p>Sim. É um projeto estático, leve e mais tranquilo de publicar, sem etapa de build obrigatória para funcionar.</p>
+            <h3>Atende Adolfo e região?</h3>
+            <p>Sim. O site foi organizado para destacar a atuação local e facilitar o contato para clientes da região.</p>
           </article>
 
-          <article class="card faq-card">
+          <article class="card">
             <div class="icon-wrap">
               <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M3 12h18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
             </div>
-            <h3>Dá para trocar as reviews depois?</h3>
-            <p>Sim. Os blocos de avaliações foram deixados organizados para facilitar atualização futura com reviews reais do Google.</p>
+            <h3>Posso conferir a empresa no Google?</h3>
+            <p>Sim. Há botão direto para abrir o Google Maps e verificar a presença pública da Água Milagrosa.</p>
           </article>
         </div>
       </div>
@@ -1521,27 +808,23 @@
         <div class="cta-card">
           <div class="cta-inner">
             <div>
-              <span class="eyebrow">Pronto para captar orçamento</span>
-              <h2>Quer transformar visita em conversa e conversa em orçamento?</h2>
-              <p>O site agora trabalha com mais cara de autoridade, mais prova social e mais atalhos de contato. O próximo passo é publicar e ligar o tráfego na tomada certa.</p>
+              <span class="eyebrow" style="background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.18);color:#fff;">Pronto para contato</span>
+              <h2>Quer resolver seu poço artesiano com atendimento mais rápido?</h2>
+              <p>Fale com a Água Milagrosa no WhatsApp e peça seu orçamento. O caminho agora está mais curto, mais claro e mais forte comercialmente.</p>
               <div class="cta-actions">
-                <a class="btn btn-primary" href="https://wa.me/5517981079757?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer">
-                  Falar no WhatsApp
-                </a>
-                <a class="btn btn-secondary" href="https://maps.app.goo.gl/RLTCVBAxEPG5Dbwn9" target="_blank" rel="noopener noreferrer">
-                  Abrir no Google Maps
-                </a>
+                <a class="btn btn-primary" href="https://wa.me/5517981079757?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+                <a class="btn btn-outline" href="https://maps.app.goo.gl/RLTCVBAxEPG5Dbwn9" target="_blank" rel="noopener noreferrer">Abrir no Google Maps</a>
               </div>
             </div>
 
             <div class="cta-panel">
-              <ul class="cta-list">
-                <li>Header com CTA forte</li>
-                <li>Formulário que abre WhatsApp</li>
-                <li>Widget premium flutuante</li>
-                <li>Mapa e contato local visíveis</li>
-                <li>Seção de avaliações preparada</li>
-                <li>Estrutura leve para deploy</li>
+              <ul class="bullet-list" style="margin-top:0;">
+                <li style="color:#fff;">Logo corrigida sem fundo preto</li>
+                <li style="color:#fff;">Header com leitura mais forte</li>
+                <li style="color:#fff;">Menu mobile sem invadir desktop</li>
+                <li style="color:#fff;">Copy voltada ao cliente final</li>
+                <li style="color:#fff;">Prova social mais crível</li>
+                <li style="color:#fff;">FAQ sem papo técnico de bastidor</li>
               </ul>
             </div>
           </div>
@@ -1550,14 +833,12 @@
     </section>
   </main>
 
-  <footer class="site-footer" id="contato">
+  <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="logo.png" alt="Água Milagrosa Poços Artesianos" />
-          <p>
-            Soluções em perfuração, manutenção e regularização de poços artesianos com foco em atendimento prático e comercial.
-          </p>
+          <img src="logo-site.svg" alt="Água Milagrosa Poços Artesianos" />
+          <p>Soluções em perfuração, manutenção e regularização de poços artesianos com foco em atendimento rápido e presença local.</p>
         </div>
 
         <div class="footer-col">
@@ -1571,11 +852,7 @@
 
         <div class="footer-col">
           <h4>Endereço</h4>
-          <p>
-            Rua José Luís Gandini, 1834<br>
-            Distrito Industrial João Theodoro de Deus<br>
-            Adolfo/SP
-          </p>
+          <p>Rua José Luís Gandini, 1834<br>Distrito Industrial João Theodoro de Deus<br>Adolfo/SP</p>
         </div>
       </div>
 
@@ -1590,17 +867,15 @@
     <div class="widget-panel" id="widgetPanel">
       <div class="widget-head">
         <strong>Água Milagrosa no WhatsApp</strong>
-        <span>Fale agora e peça seu orçamento.</span>
+        <span>Quer orçamento? Toque abaixo e fale direto no atendimento.</span>
       </div>
       <div class="widget-body">
         <div class="widget-bubble">
-          Olá! Quer perfuração, manutenção ou regularização? Toque abaixo e fale direto no atendimento 👇
+          Olá! Quer perfuração, manutenção ou regularização? Chama no WhatsApp que a conversa já começa pelo canal certo 👇
         </div>
         <div class="widget-actions">
-          <a class="btn btn-primary" href="https://wa.me/5517981079757?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20para%20po%C3%A7o%20artesiano." target="_blank" rel="noopener noreferrer">
-            Abrir WhatsApp
-          </a>
-          <button class="btn btn-secondary light" type="button" id="widgetClose">Fechar</button>
+          <a class="btn btn-primary" href="https://wa.me/5517981079757?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20para%20po%C3%A7o%20artesiano." target="_blank" rel="noopener noreferrer">Abrir WhatsApp</a>
+          <button class="btn btn-secondary" type="button" id="widgetClose">Fechar</button>
         </div>
       </div>
     </div>
@@ -1613,27 +888,21 @@
 
   <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Água Milagrosa Poços Artesianos",
-      "image": "banner-principal.png",
-      "telephone": "+55 17 98107-9757",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Rua José Luís Gandini, 1834",
-        "addressLocality": "Adolfo",
-        "addressRegion": "SP",
-        "addressCountry": "BR"
+      "@context":"https://schema.org",
+      "@type":"LocalBusiness",
+      "name":"Água Milagrosa Poços Artesianos",
+      "image":"banner-principal.png",
+      "telephone":"+55 17 98107-9757",
+      "address":{
+        "@type":"PostalAddress",
+        "streetAddress":"Rua José Luís Gandini, 1834",
+        "addressLocality":"Adolfo",
+        "addressRegion":"SP",
+        "addressCountry":"BR"
       },
-      "areaServed": [
-        "Adolfo/SP",
-        "Região de Adolfo/SP"
-      ],
-      "url": "",
-      "sameAs": [
-        "https://maps.app.goo.gl/RLTCVBAxEPG5Dbwn9"
-      ],
-      "description": "Perfuração, manutenção e regularização de poços artesianos com atendimento comercial via WhatsApp."
+      "areaServed":["Adolfo/SP","Região de Adolfo/SP"],
+      "sameAs":["https://maps.app.goo.gl/RLTCVBAxEPG5Dbwn9"],
+      "description":"Perfuração, manutenção e regularização de poços artesianos com atendimento comercial via WhatsApp."
     }
   </script>
 
@@ -1647,19 +916,27 @@
     const formMessage = document.getElementById('formMessage');
     const whatsappNumber = '5517981079757';
 
+    function closeMobileMenu(){
+      mobileNav.classList.remove('show');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    }
+
     menuToggle.addEventListener('click', () => {
       const isOpen = mobileNav.classList.toggle('show');
       menuToggle.setAttribute('aria-expanded', String(isOpen));
     });
 
     document.querySelectorAll('.mobile-nav a').forEach((link) => {
-      link.addEventListener('click', () => {
-        mobileNav.classList.remove('show');
-        menuToggle.setAttribute('aria-expanded', 'false');
-      });
+      link.addEventListener('click', closeMobileMenu);
     });
 
-    function toggleWidget(forceState) {
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 860) {
+        closeMobileMenu();
+      }
+    });
+
+    function toggleWidget(forceState){
       const shouldOpen = typeof forceState === 'boolean'
         ? forceState
         : !widgetPanel.classList.contains('open');
@@ -1686,13 +963,13 @@
         `Meu WhatsApp é ${telefone}.`,
         cidade ? `Minha cidade/região é ${cidade}.` : '',
         servico ? `Tenho interesse em: ${servico}.` : '',
-        mensagem ? `Detalhes: ${mensagem}` : '',
+        mensagem ? `Detalhes: ${mensagem}` : ''
       ].filter(Boolean).join('\n');
 
       const link = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(texto)}`;
 
       formMessage.textContent = 'Mensagem pronta. Abrindo o WhatsApp...';
-      formMessage.className = 'form-message success';
+      formMessage.classList.add('show');
 
       window.open(link, '_blank', 'noopener,noreferrer');
     });
